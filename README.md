@@ -27,6 +27,17 @@ Turning multi-omic data into therapeutic insight: 5+ years postdoctoral research
 - [bulk-atacseq-pipeline](https://github.com/syed1789/bulk-atacseq-pipeline) — Tn5 shift, fragment-size & TSS-enrichment QC, MACS3 peak calling
 - [cutandrun-pipeline](https://github.com/syed1789/cutandrun-pipeline) — bowtie2 + MACS3 peak calling on public CUT&Tag data
 
+## Infrastructure & scale
+
+- **Containers** — Docker/Singularity profiles in [nf-variant-pipeline](https://github.com/syed1789/nf-variant-pipeline/blob/main/nextflow.config); pinned biocontainers per rule in every Snakemake DAG; Dockerfiles in [cite-seq-wnn-trajectory](https://github.com/syed1789/cite-seq-wnn-trajectory), [crispr-mageck-screen](https://github.com/syed1789/crispr-mageck-screen), [perturb-seq-deep-learning](https://github.com/syed1789/perturb-seq-deep-learning) and [spatial-visium-squidpy](https://github.com/syed1789/spatial-visium-squidpy)
+- **HPC (SLURM + Apptainer)** — SLURM job scripts and a Docker/Apptainer runtime switch across the pipeline repos, e.g. [bulk-rnaseq-star-deseq2](https://github.com/syed1789/bulk-rnaseq-star-deseq2/blob/main/HPC_AWS.md), [bulk-chipseq-pipeline](https://github.com/syed1789/bulk-chipseq-pipeline/blob/main/HPC_AWS.md), [bulk-atacseq-pipeline](https://github.com/syed1789/bulk-atacseq-pipeline/blob/main/HPC_AWS.md), [cutandrun-pipeline](https://github.com/syed1789/cutandrun-pipeline/blob/main/HPC_AWS.md)
+- **AWS (EC2 + S3)** — one-shot launcher scripts that run an analysis on an EC2 instance, sync results to S3 and terminate, e.g. [`aws/launch_ec2.sh`](https://github.com/syed1789/bulk-rnaseq-star-deseq2/blob/main/aws/launch_ec2.sh); Nextflow `awsbatch` profile in [nf-variant-pipeline](https://github.com/syed1789/nf-variant-pipeline)
+- **Workflow engines** — Nextflow, Snakemake, Airflow DAG, PySpark
+
+## Spatial transcriptomics
+
+- [**spatial-visium-squidpy**](https://github.com/syed1789/spatial-visium-squidpy) — 10x Visium mouse brain with Scanpy + Squidpy: Leiden clustering, neighborhood enrichment, co-occurrence, Moran's I, ligand-receptor inference; Docker, SLURM and EC2 run scripts
+
 ## Core stack
 
 ![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)
