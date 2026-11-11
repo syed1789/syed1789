@@ -1,7 +1,7 @@
 # Syed Nurul Hasan, Ph.D.
 ### Computational Immunologist — Single-Cell Genomics & Immuno-Oncology
 
-Turning multi-omic data into therapeutic insight: 5+ years postdoctoral research across single-cell and spatial genomics, 10 peer-reviewed publications, and 100,000+ single cells analyzed across 20+ projects spanning immuno-oncology and cardiovascular immunology.
+Turning multi-omic data into therapeutic insight: 5+ years postdoctoral research across single-cell and spatial genomics, 10 peer-reviewed publications, and 2,000,000+ single cells analyzed across 10+ projects spanning immuno-oncology and cardiovascular immunology.
 
 📧 [nayanchoton1789@gmail.com](mailto:nayanchoton1789@gmail.com) · 🔗 [LinkedIn](https://linkedin.com/in/syed-nurul-hasan-510b6112b) · 🆔 [ORCID 0000-0002-4564-872X](https://orcid.org/0000-0002-4564-872X)
 
